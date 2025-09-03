@@ -87,6 +87,18 @@ modify the /App.tsx with some typos, probably modify the comments
 sign in to Github 
 create a new public project "claude_code_treasure_game"
 
+brew install gh
+gh auth login
+
+echo "# claude_code_treasure_game_001" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/uopspop/claude_code_treasure_game_001.git
+git push -u origin main
+
+
 > use "git init" for my project and commit the code as first commit
 > create a new github repository to my github account from the project  
 
@@ -98,3 +110,4 @@ create file: deploy_to_github_page.md
 ex. https://[account].github.io/claude_code_treasure_game/
 
 # claude_code_treasure_game
+# claude_code_treasure_game_001
