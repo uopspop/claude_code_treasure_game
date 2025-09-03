@@ -2,10 +2,29 @@
   import { defineConfig } from 'vite';
   import react from '@vitejs/plugin-react-swc';
   import path from 'path';
+  import { readFileSync, writeFileSync } from 'fs';
 
   export default defineConfig({
-    plugins: [react()],
+    plugins: [
+      react(),
+      {
+        name: 'fix-asset-paths',
+        generateBundle(options, bundle) {
+          Object.keys(bundle).forEach((fileName) => {
+            const file = bundle[fileName];
+            if (file.type === 'chunk' && file.code) {
+              file.code = file.code.replace(/\/assets\//g, './assets/');
+            }
+          });
+        }
+      }
+    ],
     base: "./",
+    experimental: {
+      renderBuiltUrl(filename: string) {
+        return `./${filename}`;
+      }
+    },
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
@@ -54,6 +73,12 @@
     build: {
       target: 'esnext',
       outDir: 'build',
+      assetsDir: 'assets',
+      rollupOptions: {
+        output: {
+          assetFileNames: 'assets/[name]-[hash][extname]'
+        }
+      }
     },
     server: {
       port: 3000,
