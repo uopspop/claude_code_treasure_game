@@ -85,6 +85,7 @@ modify the /App.tsx with some typos, probably modify the comments
 
 ### custom command - deploy to Github Pages 
 sign in to Github 
+create a new public project "claude_code_treasure_game"
 
 > use "git init" for my project and commit the code as first commit
 > create a new github repository to my github account from the project  
@@ -96,3 +97,4 @@ create file: deploy_to_github_page.md
 
 ex. https://[account].github.io/claude_code_treasure_game/
 
+# claude_code_treasure_game
