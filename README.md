@@ -98,14 +98,14 @@ git branch -M main
 git remote add origin https://github.com/uopspop/claude_code_treasure_game_001.git
 git push -u origin main
 
-
-> use "git init" for my project and commit the code as first commit
-> create a new github repository to my github account from the project  
-
 create folder: .claude/commands
 create file: deploy_to_github_page.md
 
 > I'm creating a new check_typo command @.claude/commands/deploy_to_github_page.md . help me finish it to deploy my project to Github Pages. Include an Argument to specify which branch to use for Github Page deployment. 
+
+re-open claude code 
+
+/deploy_to_github_page gh-pages-demo-001     
 
 ex. https://[account].github.io/claude_code_treasure_game/
 
