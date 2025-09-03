@@ -98,6 +98,8 @@ git branch -M main
 git remote add origin https://github.com/uopspop/claude_code_treasure_game_001.git
 git push -u origin main
 
+Go to Github > Go to Repo > Settings > Page > Select branch: "complete_gh_page" 
+
 create folder: .claude/commands
 create file: deploy_to_github_page.md
 
@@ -105,7 +107,7 @@ create file: deploy_to_github_page.md
 
 re-open claude code 
 
-/deploy_to_github_page gh-pages-demo-001     
+/deploy_to_github_page complete_gh_page
 
 ex. https://[account].github.io/claude_code_treasure_game/
 
