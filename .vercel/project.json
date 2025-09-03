@@ -1,0 +1,16 @@
+{
+  "projectId": "prj_L3B3sbhYRf27CJjkLwTDXMG06ftv",
+  "orgId": "team_zSmCuj45JKP4AHdaIjXzhiJG",
+  "projectName": "treasure_box_game",
+  "settings": {
+    "createdAt": 1756793656459,
+    "framework": "vite",
+    "devCommand": null,
+    "installCommand": null,
+    "buildCommand": null,
+    "outputDirectory": null,
+    "rootDirectory": null,
+    "directoryListing": false,
+    "nodeVersion": "22.x"
+  }
+}
